@@ -1,5 +1,7 @@
-import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { RippleButton } from '../animate-ui/buttons/ripple';
+import { GradientText } from '../animate-ui/text/gradient';
+import { HighlightText } from '../animate-ui/text/highlight';
 
 export default function Hero({
     isDark,
@@ -31,18 +33,11 @@ export default function Hero({
                         <p className='text-orange-500 font-medium mb-2'>
                             Hi I am
                         </p>
-                        <h1 className='text-orange-500 text-3xl font-medium'>
-                            Ahmed Adel
+                        <h1 className='text-3xl font-medium'>
+                            <HighlightText text='Ahmed Adel' />
                         </h1>
                         <h2 className='text-4xl lg:text-6xl font-bold mb-6 mt-0 pt-3'>
-                            {/* UI & UX */}
-                            <span
-                                className={
-                                    isDark ? 'text-white' : 'text-gray-900'
-                                }
-                            >
-                                Full Stack Developer
-                            </span>
+                            <GradientText text='Full Stack Developer' />
                         </h2>
                         <p
                             className={`text-lg mb-8 max-w-md mx-auto ${
@@ -55,12 +50,13 @@ export default function Hero({
                             solutions. Passionate about creating impactful
                             software and continuously enhancing my skills.
                         </p>
-                        <Button
+                        <RippleButton
                             onClick={() => scrollToSection('projects')}
                             className='bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg cursor-pointer'
+                            rippleClassName='bg-orange-200'
                         >
                             Hire Me
-                        </Button>
+                        </RippleButton>
                     </motion.div>
 
                     {/* <motion.div

@@ -34,10 +34,10 @@ export default function Services({ isDark }: { isDark: boolean }) {
                             }}
                         >
                             <Card
-                                className={`p-6 text-center hover:shadow-lg transition-shadow duration-300 ${
+                                className={`p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer h-full ${
                                     isDark
-                                        ? 'bg-gray-800 border-gray-700'
-                                        : 'bg-white'
+                                        ? 'bg-gray-800 border-gray-700 hover:bg-gray-900'
+                                        : 'bg-white hover:bg-gray-100'
                                 }`}
                             >
                                 <CardContent className='p-0'>

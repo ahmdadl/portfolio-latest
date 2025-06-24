@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import codeImg from '../../assets/code.png';
-import { LiquidButton } from '../animate-ui/buttons/liquid';
 
 export default function About({ isDark }: { isDark: boolean }) {
     return (
@@ -46,7 +45,7 @@ export default function About({ isDark }: { isDark: boolean }) {
                             e-commerce platforms, medical systems, and booking
                             applications
                         </p>
-                        return <LiquidButton>Liquid Button</LiquidButton>;
+
                         {/* <div className='space-y-6'>
                                 {skills.map((skill, index) => (
                                     <div key={skill.name}>
