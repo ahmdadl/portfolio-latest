@@ -145,8 +145,16 @@ export default function App() {
                                     )}
                                 </Button>
 
-                                <Button className='hidden lg:block bg-orange-500 hover:bg-orange-600 text-white'>
-                                    Download CV
+                                <Button
+                                    className='hidden lg:block bg-orange-500 hover:bg-orange-600 text-white'
+                                    asChild
+                                >
+                                    <a
+                                        href='/ahmed-adel-cv.pdf'
+                                        download={'ahmed-adel-cv.pdf'}
+                                    >
+                                        Download CV
+                                    </a>
                                 </Button>
                             </div>
                         </div>

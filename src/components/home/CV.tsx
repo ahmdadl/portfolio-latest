@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
 import cvImg from '../../assets/ahmed-adel_cv_image.jpg';
-import { LiquidButton } from '../animate-ui/buttons/liquid';
+import { Button } from '../ui/button';
 
 export default function CV({ isDark }: { isDark: boolean }) {
     return (
@@ -29,18 +29,18 @@ export default function CV({ isDark }: { isDark: boolean }) {
                                 loading='lazy'
                             />
                         </div>
-                        <LiquidButton
+                        <Button
                             className='bg-orange-500 hover:bg-orange-600 text-white flex items-center space-x-2 mx-auto'
-                            // asChild
+                            asChild
                         >
-                            {/* <a
-                                    href='/ahmed-adel-cv.pdf'
-                                    download={'ahmed-adel-cv.pdf'}
-                                > */}
-                            <Download className='w-4 h-4' />
-                            <span>Download CV</span>
-                            {/* </a> */}
-                        </LiquidButton>
+                            <a
+                                href='/ahmed-adel-cv.pdf'
+                                download={'ahmed-adel-cv.pdf'}
+                            >
+                                <Download className='w-4 h-4' />
+                                <span>Download CV</span>
+                            </a>
+                        </Button>
                     </div>
                 </motion.div>
             </div>

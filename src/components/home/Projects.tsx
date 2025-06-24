@@ -4,7 +4,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import { projects } from '../../lib/data';
-import { LiquidButton } from '../animate-ui/buttons/liquid';
 
 export default function Projects({ isDark }: { isDark: boolean }) {
     return (
@@ -160,10 +159,10 @@ export default function Projects({ isDark }: { isDark: boolean }) {
                 </div>
 
                 <div className='text-center'>
-                    <LiquidButton
+                    <Button
                         variant='outline'
                         className='flex items-center space-x-2 mx-auto'
-                        // asChild
+                        asChild
                     >
                         <a
                             href='https://github.com/ahmdadl'
@@ -174,7 +173,7 @@ export default function Projects({ isDark }: { isDark: boolean }) {
                             <Github className='w-4 h-4' />
                             <span>View All on GitHub</span>
                         </a>
-                    </LiquidButton>
+                    </Button>
                 </div>
             </div>
         </section>
