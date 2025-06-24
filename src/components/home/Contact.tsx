@@ -53,26 +53,28 @@ export default function Contact({ isDark }: { isDark: boolean }) {
                                 <Mail className='w-6 h-6 text-orange-500' />
                             </div>
                             <h3 className='font-bold mb-2'>Email</h3>
-                            <p
+                            <a
+                                href='mailto:ahmdadl.dev@gmail.com'
                                 className={
                                     isDark ? 'text-gray-300' : 'text-gray-600'
                                 }
                             >
-                                hello@fawziux.com
-                            </p>
+                                ahmdadl.dev@gmail.com
+                            </a>
                         </div>
                         <div>
                             <div className='w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4'>
                                 <Phone className='w-6 h-6 text-orange-500' />
                             </div>
                             <h3 className='font-bold mb-2'>Phone</h3>
-                            <p
+                            <a
+                                href='tel:+201143647417'
                                 className={
                                     isDark ? 'text-gray-300' : 'text-gray-600'
                                 }
                             >
-                                +1 234 567 8900
-                            </p>
+                                +201143647417
+                            </a>
                         </div>
                         <div>
                             <div className='w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4'>
@@ -84,7 +86,7 @@ export default function Contact({ isDark }: { isDark: boolean }) {
                                     isDark ? 'text-gray-300' : 'text-gray-600'
                                 }
                             >
-                                New York, USA
+                                Cairo, Egypt
                             </p>
                         </div>
                     </div>
