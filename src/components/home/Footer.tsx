@@ -45,22 +45,43 @@ export default function Footer({
                             variant='ghost'
                             size='icon'
                             className='rounded-full'
+                            asChild
                         >
-                            <Linkedin className='w-5 h-5' />
+                            <a
+                                href='https://linkedin.com/in/ahmdadl'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                <Linkedin className='w-5 h-5' />
+                            </a>
                         </Button>
                         <Button
                             variant='ghost'
                             size='icon'
                             className='rounded-full'
+                            asChild
                         >
-                            <Github className='w-5 h-5' />
+                            <a
+                                href='https://github.com/ahmdadl'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                <Github className='w-5 h-5' />
+                            </a>
                         </Button>
                         <Button
                             variant='ghost'
                             size='icon'
                             className='rounded-full'
+                            asChild
                         >
-                            <Gitlab className='w-5 h-5' />
+                            <a
+                                href='https://gitlab.com/ahmdadl'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                <Gitlab className='w-5 h-5' />
+                            </a>
                         </Button>
                     </div>
                 </div>
