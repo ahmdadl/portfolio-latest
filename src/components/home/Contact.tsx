@@ -16,16 +16,17 @@ export default function Contact({ isDark }: { isDark: boolean }) {
                     className='text-center mb-16'
                 >
                     <h2 className='text-4xl font-bold mb-4'>
-                        Let's Design Together
+                        Let's Develop Together
                     </h2>
                     <p
                         className={`text-lg max-w-2xl mx-auto ${
                             isDark ? 'text-gray-300' : 'text-gray-600'
                         }`}
                     >
-                        Lorem ipsum dolor sit amet consectetur. Tristique amet
-                        sed massa nibh lectus netus in. Aliquet donec morbi
-                        convallis pretium
+                        I will be happy to help you with any questions or
+                        concerns you may have. Whether you need assistance with
+                        a project, have a question about web development, or
+                        just want to chat, feel free to reach out!
                     </p>
                 </motion.div>
 
