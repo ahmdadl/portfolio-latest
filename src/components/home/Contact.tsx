@@ -1,7 +1,6 @@
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { AnimatedContactForm } from './AnimatedContactForm';
 
 export default function Contact({ isDark }: { isDark: boolean }) {
     return (
@@ -31,21 +30,10 @@ export default function Contact({ isDark }: { isDark: boolean }) {
                 </motion.div>
 
                 <div className='max-w-2xl mx-auto'>
-                    <form className='space-y-6'>
-                        <div className='flex space-x-4'>
-                            <Input
-                                placeholder='Enter Your Email'
-                                className={`flex-1 ${
-                                    isDark
-                                        ? 'bg-gray-700 border-gray-600'
-                                        : 'bg-white'
-                                }`}
-                            />
-                            <Button className='bg-orange-500 hover:bg-orange-600 text-white px-8'>
-                                Contact Me
-                            </Button>
-                        </div>
-                    </form>
+                    {/* <ContactForm isDark={isDark} /> */}
+                    <div className='my-4'>
+                        <AnimatedContactForm isDark={isDark} />
+                    </div>
 
                     <div className='mt-12 grid md:grid-cols-3 gap-8 text-center'>
                         <div>

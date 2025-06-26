@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { Toaster } from '@/components/ui/sonner';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, Moon, Sun, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -209,6 +210,8 @@ export default function App() {
 
                 <Footer isDark={isDark} scrollToSection={scrollToSection} />
             </div>
+
+            <Toaster richColors />
         </>
     );
 }
