@@ -137,12 +137,12 @@ export const projects = [
     },
     {
         id: 6,
-        title: 'E Store SPA',
+        title: 'TechStore SPA',
         category: 'fullstack',
         type: 'side',
-        image: '/supps-store.webp',
+        image: '/techstore-spa.webp',
         description:
-            'E Store SPA is a single-page application version of an e-commerce platform, optimized for performance and user interaction.',
+            'TechStore SPA is a single-page application version of an e-commerce platform, optimized for performance and user interaction.',
         technologies: [
             'Laravel',
             'MySQL',
@@ -152,17 +152,17 @@ export const projects = [
             'TanStack Router',
             'Tailwind CSS',
         ],
-        github: 'https://github.com/ahmdadl/simple-ecommerce-api',
-        live: 'https://supps.crafted-internet.com',
+        github: 'https://github.com/ahmdadl/simple-ecommerce-spa',
+        live: 'https://techstore-spa.crafted-internet.com/en',
     },
     {
         id: 7,
-        title: 'E Store SSR',
+        title: 'TechStore SSR',
         category: 'fullstack',
         type: 'side',
-        image: '/supps-store.webp',
+        image: '/techstore-ssr.webp',
         description:
-            'E Store SSR is a server-side rendered e-commerce platform with advanced filtering, payment integration, and a management dashboard, optimized for SEO.',
+            'TechStore SSR is a server-side rendered e-commerce platform with advanced filtering, payment integration, and a management dashboard, optimized for SEO.',
         technologies: [
             'Laravel',
             'MySQL',
@@ -174,6 +174,6 @@ export const projects = [
             'Tailwind CSS',
         ],
         github: 'https://github.com/ahmdadl/simple-ecommerce-api',
-        live: 'https://supps.crafted-internet.com',
+        live: 'https://techstore.crafted-internet.com/en',
     },
 ].reverse();
